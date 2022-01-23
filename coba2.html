@@ -1,0 +1,53 @@
+<!DOCTYPE html5>
+<html>
+
+<head>
+    <title>#dirumahaja</title>
+
+    <script type="text/javascript">
+        window.onload = function() {
+            jam();
+        }
+
+        function jam() {
+            var e = document.getElementById('jam'),
+                d = new Date(),
+                h, m, s;
+            h = d.getHours();
+            m = set(d.getMinutes());
+            s = set(d.getSeconds());
+
+            e.innerHTML = h + ':' + m + ':' + s;
+
+            setTimeout('jam()', 1000);
+        }
+
+        function set(e) {
+            e = e < 10 ? '0' + e : e;
+            return e;
+        }
+    </script>
+    <center>
+        <audio controls="controls" autoplay="autoplay" loop="true">
+<source src="#" type="audio/mp3">
+</audio>
+    </center>
+    <center>
+        <h2>
+            <font style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">Habis bangun tidur,makan,tidur. bangun lagi. makan. tidur lagi. seumur hidupku tanpa istirahat.aku butuh istirahat dalam keseharianku</font>
+        </h2>
+    </center>
+</head>
+
+<body>
+    <center>
+        <h1 style="font-size: 120px; font-family: verdana;" id="jam"></h1>
+    </center>
+    <h1>
+        <center>
+            <font color="red" style="font-size:120px;">#dirumahaja</font>
+        </center>
+    </h1>
+</body>
+
+</html>
